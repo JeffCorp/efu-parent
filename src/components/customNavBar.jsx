@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   Collapse,
   Navbar,
@@ -11,9 +11,9 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  NavbarText
-} from 'reactstrap';
-import Logo from "../img/e.png"
+  NavbarText,
+} from "reactstrap";
+import Logo from "../img/e.png";
 
 const CustomNavBar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,22 +22,43 @@ const CustomNavBar = (props) => {
 
   return (
     <div>
-      <Navbar className="primary-color" light expand="lg">
-        <NavbarBrand href="/" className="white-text"><img src={Logo} alt="" style={{width: "70px", height: "70px"}}/></NavbarBrand>
+      <Navbar
+        className="transparent"
+        style={{ zIndex: "200" }}
+        light
+        expand="lg"
+      >
+        <NavbarBrand href="/" className="white-text" style={{position: "sticky"}}>
+          <img src={Logo} alt="" style={{ width: "70px", height: "70px" }} />
+        </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
-            <NavItem>
-              <NavLink href="/components/" className="white-text">Components</NavLink>
+            <NavItem className="mr-5 ml-5">
+              <NavLink href="/components/" className="white-text">
+                Home
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap" className="white-text">GitHub</NavLink>
+              <NavLink
+                href="https://github.com/reactstrap/reactstrap"
+                className="white-text"
+              >
+                About
+              </NavLink>
+            </NavItem>
+          </Nav>
+          <Nav className="ml-auto" navbar>
+            <NavItem>
+              <NavLink href="/components/" className="white-text styled-button">
+                WORK WITH US
+              </NavLink>
             </NavItem>
           </Nav>
         </Collapse>
       </Navbar>
     </div>
   );
-}
+};
 
 export default CustomNavBar;

@@ -18,12 +18,18 @@ code {
 }
 
 .primary-color-text{
-  background-color: white !important; 
+  /* background-color: white !important;  */
   color: #2f2f41 !important;
 }
 
 .secondary-color-text{
+
   color: #ff5722;
+}
+
+.secondary-color{
+  background: #ff5722;
+  color: white;
 }
 
 .white-text{
@@ -33,8 +39,10 @@ code {
 .hero{
   height: 100vh;
   margin-top: 0 !important;
-  background-color: #2f2f41;
+  background-color: #2f2f41f7;
   display: flex !important;
+  margin-right: 0 !important;
+  padding-right: 0px !important;
 }
 
 .hero-right{
@@ -42,6 +50,8 @@ code {
   margin-top: 0 !important;
   display: flex !important;
   margin-left: 0 !important;
+  background: #000000aa;
+  margin-left: 0px !important;
 }
 
 .innerHero{
@@ -61,9 +71,47 @@ code {
 }
 
 .big-font{
-  font-size: 4em;
+  font-size: 4.5em;
 }
 
 .corners-20{
   border-radius: 20px;
+}
+
+.styled-button{
+  border: 1px solid #ff5722;
+  border-radius: 15px 15px 0 15px;
+  color: #ff5722 !important;
+}
+
+.full-hero{
+  background: url(../src/img/school.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  /* filter: blur(3px); */
+}
+
+.space-letters-lg{
+  letter-spacing: 5px;
+}
+
+.space-letters-sm{
+  letter-spacing: 3px;
+}
+
+.section{
+  /* background: url(../src/img/bg4.jpg); */
+  background-attachment: fixed;
+  height: 200px;
+  letter-spacing: 3px;
+  text-align: justify;
+  font-size: 1.5em;
+}
+
+.left-bulb{
+  border-radius: 0px 30px 30px 30px;
+}
+
+.right-bulb{
+  border-radius: 30px 0px 30px 30px;
 }
