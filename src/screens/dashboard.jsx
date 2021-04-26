@@ -58,7 +58,7 @@ export const Dashboard = () => {
               backgroundSize: "contain",
               height: "50vh",
               position: "relative",
-              zIndex: "200",
+              zIndex: "100",
               marginLeft: "200px",
               marginTop: "-80vh",
             }}
