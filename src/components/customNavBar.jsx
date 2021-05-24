@@ -24,8 +24,8 @@ const CustomNavBar = (props) => {
     <div>
       <Navbar
         className="transparent"
-        style={{ zIndex: "200" }}
-        light
+        style={{ background: "#dddddd98" }}
+        
         expand="lg"
       >
         <NavbarBrand href="/" className="white-text" style={{position: "sticky"}}>

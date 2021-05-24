@@ -5,11 +5,15 @@ import P2 from "../img/p2.png";
 import dash1 from "../img/dash1.png";
 import Two from "../img/twophones.png";
 import phone from "../img/app.png";
+import dot from "../img/dot-pattern.png";
 import Explain from "../img/explain.png";
 import { List } from "../components/list";
 import { FaList } from "react-icons/fa";
 import { CustomFooter } from "../components/customFooter";
 import Particles from "react-particles-js";
+import ReactPlayer from "react-player";
+import EfuSchoolVideo from "../img/efu-school.mp4";
+import EfuSchoolImage from "../img/efu-school.png";
 
 export const Dashboard = () => {
   const features = [
@@ -24,29 +28,30 @@ export const Dashboard = () => {
       style={{ paddingLeft: 0, paddingRight: 0, overflowX: "hidden" }}
     >
       <CustomNavBar />
-      <div className="row full-hero" style={{ marginTop: "-96px" }}>
-        <div className="col-md-12" style={{ paddingRight: "0px" }}>
-          <div className="hero">
-            <div className="center-vertical white-text"></div>
-          </div>
-        </div>
-      </div>
-      <div className="row" style={{ marginTop: "-65vh" }}>
-        <div className="col-md-12 pl-5">
-          <div className="hero-l">
-            <div
-              className="center-vertical white-text"
-              style={{ textAlign: "center" }}
-            >
-              <span
-                className="big-font bold space-letters-lg"
-                style={{ textAlign: "center" }}
-              >
-                Efu-School
+      <div className="row" style={{ height: "100vh", marginTop: "40", background: `url(${dot})`, backgroundSize: "contain", backgroundPosition: "-400px", backgroundRepeat: "no-repeat" }}>
+        <div className="col-md-12" style={{ paddingRight: "0px", background: "#dddddd89" }}>
+          <div className="row">
+            <div className="col-md-6 pl-5">
+              <div className="hero-l" >
+                <div
+                  className="center-vertical white-text pr-5 mt-5"
+                  style={{ textAlign: "left", paddingTop: "70px" }}
+                >
+                  <span
+                    className="medium-font bold  primary-color-text"
+                  >
+                    Transform your school management process
               </span>
-              <h3 className="lead secondary-color-text" style={{ fontSize: "2em" }}>
-                School Management System
-              </h3>
+                  <h3 className="lead secondary-color-text" style={{ fontSize: "2em" }}>
+                    School Management System
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6 p-4">
+              <div className="shadow radius-20" style={{ height: "55vh", width: "80%", marginTop: "80px", background: `url(${EfuSchoolImage})`, backgroundSize: "cover", backgroundRepeat: "no-repeat" }}>
+
+              </div>
             </div>
           </div>
         </div>
@@ -59,8 +64,8 @@ export const Dashboard = () => {
       <div className="row" style={{ marginTop: "350px", height: "50vh" }}>
         <div className="col-md-8 mx-auto">
           <h3
-            className="p-5 lead primary-color-text shadow space-letters-sm radius-20"
-            style={{ background: "#ffffffcc", height: "70%", display: "flex", flexDirection: "column", justifyContent: "center" }}
+            className="p-5 lead primary-color shadow space-letters-sm radius-20"
+            style={{ height: "70%", display: "flex", flexDirection: "column", justifyContent: "center" }}
           >
             The Efu-School System, designed by Efull Technology Nigeria Limited,
             is a platform developed to make school administrative processes
@@ -69,7 +74,7 @@ export const Dashboard = () => {
           </h3>
         </div>
       </div>
-      <div className="row" style={{height: "50vh"}}>
+      <div className="row" style={{ height: "50vh" }}>
         <div className="col-md-9 mx-auto mt-4">
           <div
             className="p-5 lead secondary-color-text text-center"
@@ -141,9 +146,9 @@ export const Dashboard = () => {
               User-friendly mobile application
             </h3>
             <p className="desc-font">
-            Parents have instant access to their wards academic reports <br />
+              Parents have instant access to their wards academic reports <br />
             Parents can monitor their wards movement in and out of the school
-            premises 
+            premises
             </p>
           </div>
         </div>
