@@ -9,6 +9,7 @@ import Explain from "../img/explain.png";
 import { List } from "../components/list";
 import { FaList } from "react-icons/fa";
 import { CustomFooter } from "../components/customFooter";
+import Particles from "react-particles-js";
 
 export const Dashboard = () => {
   const features = [
@@ -23,98 +24,52 @@ export const Dashboard = () => {
       style={{ paddingLeft: 0, paddingRight: 0, overflowX: "hidden" }}
     >
       <CustomNavBar />
-      <div className="row full-hero" style={{ marginTop: "-100px" }}>
-        <div className="col-md-6" style={{ paddingRight: "0px" }}>
+      <div className="row full-hero" style={{ marginTop: "-96px" }}>
+        <div className="col-md-12" style={{ paddingRight: "0px" }}>
           <div className="hero">
             <div className="center-vertical white-text"></div>
           </div>
         </div>
-        <div className="col-md-6" style={{ paddingLeft: "0px" }}>
-          <div className="hero-right">
-            <div className="center-vertical primary-color-text "></div>
+      </div>
+      <div className="row" style={{ marginTop: "-65vh" }}>
+        <div className="col-md-12 pl-5">
+          <div className="hero-l">
+            <div
+              className="center-vertical white-text"
+              style={{ textAlign: "center" }}
+            >
+              <span
+                className="big-font bold space-letters-lg"
+                style={{ textAlign: "center" }}
+              >
+                Efu-School
+              </span>
+              <h3 className="lead secondary-color-text" style={{ fontSize: "2em" }}>
+                School Management System
+              </h3>
+            </div>
           </div>
         </div>
       </div>
       <div className="row">
-        <div className="col-md-6">
-          {/* <div
-            style={{
-              background: `url(${P2})`,
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "contain",
-              height: "50vh",
-              position: "relative",
-              zIndex: "200",
-              marginLeft: "-80px",
-              marginTop: "-80vh"
-            }}
-          ></div> */}
-        </div>
-        <div className="col-md-6">
-          <div
-            style={{
-              background: `url(${Two})`,
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "contain",
-              height: "50vh",
-              position: "relative",
-              zIndex: "100",
-              marginLeft: "200px",
-              marginTop: "-80vh",
-            }}
-          ></div>
+        <div className="col-md-9 mx-auto">
+          {/* <div style={{ background: `url(${dash1})`, height: "250px", backgroundPosition: "center", backgroundSize: "contain", backgroundRepeat: "no-repeat" }}></div> */}
         </div>
       </div>
-      <div className="row" style={{ marginTop: "-70vh" }}>
-        <div className="col-md-6 pl-5">
-          <div className="hero-l">
-            <div
-              className="center-vertical white-text pl-5"
-              style={{ textAlign: "left" }}
-            >
-              <span
-                className="big-font bold space-letters-lg"
-                style={{ width: "100%", textAlign: "right" }}
-              >
-                Efu <br /> School
-              </span>
-              <h3 className="lead secondary-color-text">
-                We are the future you have been waiting for...
-              </h3>
-              {/* <span className="big-font bold pl-4" style={{textAlign: "right"}}>
-                School
-              </span> */}
-            </div>
-            {/* <div className="row">
-              <div className="col-md-8 ml-auto">
-                <img src={Two} alt="two phones" style={{ height: "200px", marginRight: "100px", marginTop: "-200px" }}/>  
-                <img
-                  src={dash1}
-                  alt="Dashboard"
-                  style={{ height: "250px", marginLeft: "-45vw" }}
-                />
-              </div>
-            </div> */}
-          </div>
-        </div>
-      </div>
-      <div className="row" style={{ marginTop: "150px" }}>
-        <div className="col-md-4">
-          <img src={dash1} alt="Dashboard" style={{ height: "250px" }} />
-        </div>
-        <div className="col-md-8" style={{ marginTop: "60px" }}>
-          <h4
-            className="p-4 lead primary-color-text shadow space-letters-sm"
-            style={{ width: "80%", background: "#ffffffcc" }}
+      <div className="row" style={{ marginTop: "350px", height: "50vh" }}>
+        <div className="col-md-8 mx-auto">
+          <h3
+            className="p-5 lead primary-color-text shadow space-letters-sm radius-20"
+            style={{ background: "#ffffffcc", height: "70%", display: "flex", flexDirection: "column", justifyContent: "center" }}
           >
             The Efu-School System, designed by Efull Technology Nigeria Limited,
             is a platform developed to make school administrative processes
             seamless. It comprises a web application, an Android clock-in
-            system, and a Parent mobile application
-          </h4>
+            system, and a cross-platform mobile application
+          </h3>
         </div>
       </div>
-      <div className="row">
+      <div className="row" style={{height: "50vh"}}>
         <div className="col-md-9 mx-auto mt-4">
           <div
             className="p-5 lead secondary-color-text text-center"
@@ -161,11 +116,44 @@ export const Dashboard = () => {
           devices for data capturing and communication
         </div>
         <div className="col-md-2">
-          <img src={P2} alt="" style={{height: "30vh"}}/>
+          <img src={P2} alt="" style={{ height: "30vh" }} />
         </div>
         {/* <div className="col-md-2"></div> */}
       </div>
-      <div className="row">
+      <div className="row primary-color p-5" style={{ height: "80vh" }}>
+        <div className="col-md-6">
+          <div className="right-info p-5">
+            <h3 className="bold medium-font">
+              Easy attendance management
+            </h3>
+            <p className="desc-font">
+              Detailed graphical illustration and analysis of attendance logs to
+              aid decision making.
+            <br />
+            Real-time notification of students’ clock-in/out to parents
+            or guardians.
+            </p>
+          </div>
+        </div>
+        <div className="col-md-6">
+          <div className="left-info p-5">
+            <h3 className="bold medium-font">
+              User-friendly mobile application
+            </h3>
+            <p className="desc-font">
+            Parents have instant access to their wards academic reports <br />
+            Parents can monitor their wards movement in and out of the school
+            premises 
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="row" style={{ marginTop: "-80vh" }}>
+        <div className="col-md-12">
+          <Particles style={{ height: "80vh" }} />
+        </div>
+      </div>
+      {/* <div className="row">
         <div className="col-md-8 ml-4">
           <div className="shadow primary-color corners-20 p-5 left-bulb">
             <h3 className="bold">
@@ -204,47 +192,8 @@ export const Dashboard = () => {
             bank accounts, or Efu-School wallet balance.
           </div>
         </div>
-      </div>
+      </div> */}
       <CustomFooter />
     </div>
   );
 };
-
-{
-  /* <div className="row" style={{ marginTop: "-200px" }}>
-            <div className="col-md-4">
-              <div
-                style={{
-                  background: `url(${P2})`,
-                  backgroundRepeat: "no-repeat",
-                  height: "100vh",
-                  position: "relative",
-                  zIndex: "200",
-                  marginLeft: "-80px",
-                }}
-              ></div>
-            </div>
-            <div className="col-md-8">
-              <div className="p-5">
-                <h2 className="white-text bold pt-5">Welcome to efu-school</h2>
-                <div className="pt-1" style={{ width: "80%" }}>
-                  <h4 className="mt-1 white-text">
-                    The Efu-School System, designed by Efull Technology Nigeria
-                    Limited, is a platform developed to make school
-                    administrative processes seamless.
-                  </h4>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col-md-10 ml-auto">
-                  <img src={Two} alt="two phones" style={{ height: "200px", marginRight: "100px" }}/>  
-                  <img
-                    src={dash1}
-                    alt="Dashboard"
-                    style={{ height: "250px", marginLeft: "-100px" }}
-                  />
-                </div>
-              </div>
-            </div>
-          </div> */
-}

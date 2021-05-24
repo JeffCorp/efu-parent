@@ -33,21 +33,6 @@ const CustomNavBar = (props) => {
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
-            <NavItem className="mr-5 ml-5">
-              <NavLink href="/components/" className="white-text">
-                Home
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                href="https://github.com/reactstrap/reactstrap"
-                className="white-text"
-              >
-                About
-              </NavLink>
-            </NavItem>
-          </Nav>
           <Nav className="ml-auto" navbar>
             <NavItem>
               <NavLink href="/components/" className="white-text styled-button">
